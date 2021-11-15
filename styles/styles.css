@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+*,
+::before,
+::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+:root {
+   --violet: #674baf;
+   --soft-magenta: #e882e8;
+   --white: #fff;
+
+   --font-size-10: 62.5%; /* 10px */
+   --font-fam-head-poppins: "Poppins", sans-serif;
+   --font-fam-body-opensans: "Open Sans", sans-serif;
+   --font-weight-400: 400;
+   --font-weight-600: 600;
+}
+
+html {
+   font-size: var(--font-size-10);
+   font-weight: var(--font-weight-400);
+}
+
+body {
+   font-size: 1.6rem;
+   font-family: var(--font-fam-body-opensans);
+   background-color: var(--violet);
+   color: var(--white);
+}
+
+.container {
+   display: flex;
+   flex-direction: column;
+   gap: 3rem;
+   justify-content: center;
+   align-items: center;
+   min-width: 32rem;
+
+   background-image: url("../images/bg-mobile.svg");
+   background-position: top 0rem center;
+   background-repeat: no-repeat;
+   background-size: contain;
+}
+
+.main_content {
+   margin: 3.5rem;
+   max-width: 48.1rem;
+}
+
+.logo_container {
+   text-align: left;
+}
+
+.logo {
+   width: 40%;
+   height: 40%;
+}
+
+.illustration_intro_container {
+   margin: 5rem 0 8rem 0;
+   width: 100%;
+}
+
+.illustration {
+   width: 100%;
+}
+
+.mockups {
+   width: 100%;
+}
+
+.intro_section {
+   margin-top: 5rem;
+   text-align: center;
+}
+
+.intro_title {
+   font-size: 2.5rem;
+   line-height: 3.5rem;
+}
+
+.intro_details {
+   margin: 2.5rem 0;
+}
+
+.register_btn {
+   width: 70%;
+   padding: 1.3rem;
+   border-radius: 5rem;
+   border: none;
+   color: var(--violet);
+   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.register_btn:hover {
+   cursor: pointer;
+   background-color: var(--soft-magenta);
+   color: var(--white);
+}
+
+.social_media ul {
+   display: flex;
+   gap: 2rem;
+   justify-content: center;
+   list-style-type: none;
+}
+
+.icon {
+   width: 3.5rem;
+   height: 3.5rem;
+   padding: 0.5rem 0.75rem;
+   border: 0.1rem solid var(--white);
+   border-radius: 50%;
+   color: var(--white);
+}
+
+.icon:hover {
+   filter: invert(29%) sepia(89%) saturate(864%) hue-rotate(239deg)
+      brightness(70%) contrast(191%);
+}
+
+footer {
+   text-align: center;
+   margin-bottom: 1rem;
+}
+
+footer a {
+   text-decoration: none;
+}
