@@ -30,8 +30,8 @@ html {
 body {
    font-size: 1.6rem;
    font-family: var(--font-fam-body-opensans);
-   background-color: var(--violet);
    color: var(--white);
+   background-color: var(--violet);
 }
 
 .container {
@@ -40,21 +40,6 @@ body {
    gap: 3rem;
    justify-content: center;
    align-items: center;
-   min-width: 32rem;
-
-   background-image: url("../images/bg-mobile.svg");
-   background-position: top 0rem center;
-   background-repeat: no-repeat;
-   background-size: contain;
-}
-
-.main_content {
-   margin: 3.5rem;
-   max-width: 48.1rem;
-}
-
-.logo_container {
-   text-align: left;
 }
 
 .logo {
@@ -63,7 +48,6 @@ body {
 }
 
 .illustration_intro_container {
-   margin: 5rem 0 8rem 0;
    width: 100%;
 }
 
@@ -76,13 +60,9 @@ body {
 }
 
 .intro_section {
-   margin-top: 5rem;
+   width: 100%;
+   margin-top: 4rem;
    text-align: center;
-}
-
-.intro_title {
-   font-size: 2.5rem;
-   line-height: 3.5rem;
 }
 
 .intro_details {
@@ -132,4 +112,85 @@ footer {
 
 footer a {
    text-decoration: none;
+}
+
+/* ================= mobile screen start here ================= */
+@media (max-width: 48.1rem) {
+   .container {
+      min-width: 32rem;
+      background-image: url("../images/bg-mobile.svg");
+      background-position: top 0rem center;
+      background-repeat: no-repeat;
+      background-size: contain;
+   }
+
+   .main_content {
+      margin: 3.5rem;
+      max-width: 48.1rem;
+   }
+
+   .illustration_intro_container {
+      margin: 5rem 0 8rem 0;
+   }
+
+   .intro_title {
+      font-size: 2.5rem;
+      line-height: 3.5rem;
+   }
+}
+
+/* ================= desktop screen start here ================= */
+@media (min-width: 48.1rem) {
+   .container {
+      min-width: 48.1rem;
+
+      background-image: url("../images/bg-desktop.svg");
+      background-position: top 0rem left -2rem;
+      background-repeat: no-repeat;
+      background-size: contain;
+   }
+
+   .main_content {
+      max-width: 117rem;
+   }
+
+   .logo_container {
+      width: 40%;
+   }
+
+   .illustration_intro_container {
+      display: grid;
+      gap: 3rem;
+      grid-template-columns: repeat(12, 1fr);
+      margin-top: 10rem;
+   }
+
+   .illustration {
+      grid-column: span 7;
+   }
+
+   .intro_section {
+      grid-column: span 5;
+      text-align: left;
+   }
+
+   .intro_title {
+      font-size: 4rem;
+      line-height: 5rem;
+   }
+
+   .intro_details {
+      line-height: 3rem;
+   }
+
+   .register_btn {
+      width: 45%;
+      padding: 2rem;
+   }
+
+   .social_media {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 5rem;
+   }
 }
