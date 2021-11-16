@@ -37,6 +37,7 @@ Users should be able to:
 -  HTML
 -  Flexbox
 -  CSS
+-  Grid
 
 ## Author
 
