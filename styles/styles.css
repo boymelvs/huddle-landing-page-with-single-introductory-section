@@ -41,11 +41,6 @@ body {
    justify-content: center;
    align-items: center;
    min-width: 32rem;
-
-   background-image: url("../images/bg-mobile.svg");
-   background-position: top 0rem center;
-   background-repeat: no-repeat;
-   background-size: contain;
 }
 
 .main_content {
@@ -63,8 +58,20 @@ body {
 }
 
 .illustration_intro_container {
-   margin: 5rem 0 8rem 0;
    width: 100%;
+}
+
+@media (max-width: 48.1rem) {
+   .container {
+      background-image: url("../images/bg-mobile.svg");
+      background-position: top 0rem center;
+      background-repeat: no-repeat;
+      background-size: contain;
+   }
+
+   .illustration_intro_container {
+      margin: 5rem 0 8rem 0;
+   }
 }
 
 .illustration {
@@ -132,4 +139,43 @@ footer {
 
 footer a {
    text-decoration: none;
+}
+
+@media (min-width: 48.1rem) {
+   .container {
+      min-width: 48.1rem;
+      background-image: url("../images/bg-desktop.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
+
+   .main_content {
+      max-width: 144rem;
+   }
+
+   .logo_container {
+      width: 40%;
+   }
+
+   .illustration_intro_container {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 5rem;
+      margin-top: 11rem;
+   }
+
+   .illustration {
+      grid-column: span 7;
+   }
+
+   .intro_section {
+      grid-column: span 5;
+      text-align: left;
+   }
+
+   .social_media {
+      display: flex;
+      justify-content: flex-end;
+   }
 }
