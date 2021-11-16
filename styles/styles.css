@@ -127,7 +127,6 @@ footer a {
    text-decoration: none;
 }
 
-<<<<<<< HEAD
 /* ================= mobile screen start here ================= */
 @media (max-width: 48.1rem) {
    .container {
@@ -166,19 +165,6 @@ footer a {
 
    .main_content {
       max-width: 117rem;
-=======
-@media (min-width: 48.1rem) {
-   .container {
-      min-width: 48.1rem;
-      background-image: url("../images/bg-desktop.svg");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-   }
-
-   .main_content {
-      max-width: 144rem;
->>>>>>> 12f1531c1abe048f582661e6da0cac3245d4f649
    }
 
    .logo_container {
@@ -187,15 +173,9 @@ footer a {
 
    .illustration_intro_container {
       display: grid;
-<<<<<<< HEAD
       gap: 3rem;
       grid-template-columns: repeat(12, 1fr);
       margin-top: 10rem;
-=======
-      grid-template-columns: repeat(12, 1fr);
-      gap: 5rem;
-      margin-top: 11rem;
->>>>>>> 12f1531c1abe048f582661e6da0cac3245d4f649
    }
 
    .illustration {
@@ -207,7 +187,6 @@ footer a {
       text-align: left;
    }
 
-<<<<<<< HEAD
    .intro_title {
       font-size: 4rem;
       line-height: 5rem;
@@ -226,10 +205,5 @@ footer a {
       display: flex;
       justify-content: flex-end;
       margin-top: 5rem;
-=======
-   .social_media {
-      display: flex;
-      justify-content: flex-end;
->>>>>>> 12f1531c1abe048f582661e6da0cac3245d4f649
    }
 }
