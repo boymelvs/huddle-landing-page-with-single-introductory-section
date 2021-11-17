@@ -41,6 +41,18 @@ body {
    align-items: center;
 }
 
+.bg_desktop_container {
+   position: relative;
+   left: -3rem;
+}
+
+.bg_desktop {
+   position: absolute;
+   top: -7rem;
+   z-index: -1;
+   width: 100%;
+}
+
 .logo {
    width: 40%;
    height: 40%;
@@ -164,18 +176,6 @@ footer a {
 
    .logo_container {
       width: 40%;
-   }
-
-   .bg_desktop_container {
-      position: relative;
-   }
-
-   .bg_desktop {
-      position: absolute;
-      top: -7rem;
-      left: -3rem;
-      z-index: -1;
-      width: 100%;
    }
 
    .illustration_intro_container {
